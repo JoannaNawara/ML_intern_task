@@ -1,7 +1,7 @@
 Applied algorithms:
-  Neural Network
-  K-Nearest Neighbours
-  Decision Tree
+  Neural Network,
+  K-Nearest Neighbours,
+  Decision Tree,
   simple heuristic
 
 Comparison of models is based on accuracy. For parameters in the project KNN was the best
