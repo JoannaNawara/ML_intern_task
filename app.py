@@ -94,7 +94,7 @@ def search_hyperparam(X_train, y_train):
 def prepare_nn(X_train, y_train, X_test, y_test):
     model = create_model(256, 0.1)
     model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-    history = model.fit(X_train, y_train, batch_size=32, epochs=1, validation_data=(X_test, y_test))
+    history = model.fit(X_train, y_train, batch_size=32, epochs=10, validation_data=(X_test, y_test))
     score = model.evaluate(X_test, y_test, verbose=0)
     print('Test loss:', score[0])
     print('Test accuracy:', score[1])
